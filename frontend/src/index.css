@@ -27,7 +27,7 @@ body {
 }
 header {
   grid-area: header;
-  background-color: #203040;
+  background-color: #072912;
 }
 main {
   grid-area: main;
@@ -35,7 +35,7 @@ main {
 }
 footer {
   grid-area: footer;
-  background-color: #203040;
+  background-color: #88d3c6;
   color: #ffffff;
 }
 /* Common */
@@ -52,7 +52,35 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #ff8000;
+  color: #099afa;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+li {
+  margin-top: 1rem;
+}
+button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+button:hover {
+  border: 0.1rem #404040 solid;
+}
+button.primary {
+  background-color: #f0c040;
+}
+button.block {
+  width: 100%;
 }
 /* Header */
 header a {
@@ -73,12 +101,25 @@ a.brand {
 .row.center {
   justify-content: center;
 }
+.row.top {
+  align-items: flex-start;
+}
+.col-1 {
+  flex: 1 1 25rem;
+}
+.col-2 {
+  flex: 2 1 50rem;
+}
+
 /* Image */
 img {
   border-radius: 0.5rem;
 }
 img.medium {
-  max-width: 29rem;
+  max-width: 25rem;
+  width: 100%;
+}
+img.large {
   width: 100%;
 }
 
@@ -105,4 +146,11 @@ img.medium {
 }
 .rating span:last-child {
   color: #404040;
+}
+/* Alert */
+.success {
+  color: #20a020;
+}
+.error {
+  color: #a02020;
 }
