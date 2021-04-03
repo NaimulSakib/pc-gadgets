@@ -14,13 +14,13 @@ const data = {
       },
       {
         _id: '2',
-        name: 'Adidas Fit Shirt',
+        name: 'Thermaltech CPU Cooler',
         category: 'Shirts',
         image: '/images/fan.jpg',
         price: 100,
         countInStock: 5,
-        brand: 'Adidas',
-        rating: 4.0,
+        brand: 'Thermaltech',
+        rating: 4.5,
         numReviews: 10,
         description: 'high quality product',
       },
@@ -61,7 +61,6 @@ const data = {
         description: 'high quality product',
       },
       
-      
       {
         _id: '6',
         name: 'AMD Processor',
@@ -74,8 +73,22 @@ const data = {
         numReviews: 15,
         description: 'high quality product',
       },
+
       {
         _id: '7',
+        name: 'Gigabyte 8GB 3200MHz RGB RAM',
+
+        category: 'Desktop RAM',
+        image: '/images/ramgigabyte.jpg',
+        price: 4400,
+        countInStock: 5,
+        brand: 'Gigabyte',
+        rating: 4.5,
+        numReviews: 15,
+        description: 'high quality product',
+      },
+      {
+        _id: '8',
         name: 'intel Processor',
         category: 'Processor',
         image: '/images/processor1.jpg',
