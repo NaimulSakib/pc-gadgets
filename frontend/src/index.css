@@ -27,7 +27,7 @@ body {
 }
 header {
   grid-area: header;
-  background-color: #072912;
+  background-color: #047579;
 }
 main {
   grid-area: main;
@@ -35,7 +35,7 @@ main {
 }
 footer {
   grid-area: footer;
-  background-color: #88d3c6;
+  background-color: #047579;
   color: #ffffff;
 }
 /* Common */
@@ -52,7 +52,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #099afa;
+  color: #76c8ff;
 }
 ul {
   padding: 0;
@@ -62,6 +62,9 @@ ul {
 li {
   margin-top: 1rem;
 }
+input,
+select,
+textarea,
 button {
   padding: 1rem;
   border-radius: 0.5rem;
@@ -70,14 +73,19 @@ button {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+button {
   background-color: #f8f8f8;
   cursor: pointer;
 }
+input:hover,
+select:hover,
+textarea:hover,
 button:hover {
   border: 0.1rem #404040 solid;
 }
 button.primary {
-  background-color: #f0c040;
+  background-color: #40f0ca;
 }
 button.block {
   width: 100%;
