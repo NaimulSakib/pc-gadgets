@@ -17,21 +17,21 @@ const data = {
   ],
     products: [
       {
-        _id: '1',
+        
         name: 'Steel Casing',
         category: 'Casing',
         image: '/images/casing.jpg',
         price: 120,
         countInStock: 5,
-        brand: 'Nike',
+        brand: 'ValueTop',
         rating: 4.5,
         numReviews: 10,
         description: 'high quality product',
       },
       {
-        _id: '2',
+        
         name: 'Thermaltech CPU Cooler',
-        category: 'Shirts',
+        category: 'Cpu Fan',
         image: '/images/fan.jpg',
         price: 100,
         countInStock: 5,
@@ -41,21 +41,21 @@ const data = {
         description: 'high quality product',
       },
       {
-        _id: '3',
-        name: 'Lacoste Free Shirt',
-        category: 'Shirts',
+        
+        name: 'Desktop Motherboard',
+        category: 'Motherboard',
         image: '/images/motherboard.jpg',
         price: 220,
         countInStock: 5,
-        brand: 'Lacoste',
+        brand: 'ASUS Rog',
         rating: 4.8,
         numReviews: 17,
         description: 'high quality product',
       },
       {
-        _id: '4',
-        name: 'Nike Slim Pant',
-        category: 'Pants',
+        
+        name: 'Desktop Ram',
+        category: 'Ram',
         image: '/images/ram.jpg',
         price: 78,
         countInStock: 5,
@@ -65,7 +65,7 @@ const data = {
         description: 'high quality product',
       },
       {
-        _id: '5',
+        
         name: 'Pendrive',
         category: 'Pendrive',
         image: '/images/pendrive.jpeg',
@@ -78,7 +78,7 @@ const data = {
       },
       
       {
-        _id: '6',
+        
         name: 'AMD Processor',
         category: 'Processor',
         image: '/images/processor.jpg',
@@ -91,7 +91,7 @@ const data = {
       },
 
       {
-        _id: '7',
+        
         name: 'Gigabyte 8GB 3200MHz RGB RAM',
 
         category: 'Desktop RAM',
@@ -104,7 +104,7 @@ const data = {
         description: 'high quality product',
       },
       {
-        _id: '8',
+        
         name: 'intel Processor',
         category: 'Processor',
         image: '/images/processor1.jpg',
