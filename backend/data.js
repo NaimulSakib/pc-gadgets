@@ -9,17 +9,16 @@ const data = {
       isAdmin: true,
     },
     {
-      name: 'John',
+      name: 'hasib',
       email: 'user@example.com',
       password: bcrypt.hashSync('1234', 8),
       isAdmin: false,
     },
   ],
     products: [
-      {
-        
-        name: 'Steel Casing',
-        category: 'Casing',
+      { 
+        name: 'Steel body Casing',
+        category: 'casing',
         image: '/images/casing.jpg',
         price: 120,
         countInStock: 5,
@@ -30,7 +29,7 @@ const data = {
       },
       {
         
-        name: 'Thermaltech CPU Cooler',
+        name: 'Thermaltech CPU Cooler fan',
         category: 'Cpu Fan',
         image: '/images/fan.jpg',
         price: 100,
@@ -42,7 +41,7 @@ const data = {
       },
       {
         
-        name: 'Desktop Motherboard',
+        name: 'Desktop ASUS Motherboard',
         category: 'Motherboard',
         image: '/images/motherboard.jpg',
         price: 220,
@@ -54,19 +53,19 @@ const data = {
       },
       {
         
-        name: 'Desktop Ram',
+        name: 'Desktop RAM',
         category: 'Ram',
         image: '/images/ram.jpg',
         price: 78,
         countInStock: 5,
-        brand: 'Nike',
+        brand: 'RAM',
         rating: 4.5,
         numReviews: 14,
         description: 'high quality product',
       },
       {
         
-        name: 'Pendrive',
+        name: 'Pendrive 64GB',
         category: 'Pendrive',
         image: '/images/pendrive.jpeg',
         price: 65,
@@ -79,7 +78,7 @@ const data = {
       
       {
         
-        name: 'AMD Processor',
+        name: 'AMD processor',
         category: 'Processor',
         image: '/images/processor.jpg',
         price: 139,
@@ -92,7 +91,7 @@ const data = {
 
       {
         
-        name: 'Gigabyte 8GB 3200MHz RGB RAM',
+        name: 'Gigabyte 8GB 3200MHz RAM',
 
         category: 'Desktop RAM',
         image: '/images/ramgigabyte.jpg',
@@ -105,7 +104,7 @@ const data = {
       },
       {
         
-        name: 'intel Processor',
+        name: 'Intel Processor',
         category: 'Processor',
         image: '/images/processor1.jpg',
         price: 139,
