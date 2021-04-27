@@ -27,44 +27,16 @@ export default function PaymentMethodScreen(props) {
           <div>
             <input
               type="radio"
-              id="nogod"
-              value="Nogod"
+              id="paypal"
+              value="Paypal"
               name="paymentMethod"
               required
               onChange={(e) => setPaymentMethod(e.target.value)}
             ></input>
-            <label htmlFor="nogod">Nogod (Personal)</label>
+            <label htmlFor="paypal">Paypal</label>
           </div>
         </div>
 
-        <div>
-          <div>
-            <input
-              type="radio"
-              id="bkash"
-              value="Bkash"
-              name="paymentMethod"
-              required
-              checked
-              onChange={(e) => setPaymentMethod(e.target.value)}
-            ></input>
-            <label htmlFor="bkash">Bkash (Personal)</label>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <input
-              type="radio"
-              id="cod"
-              value="CashOnDelivery"
-              name="paymentMethod"
-              required
-              onChange={(e) => setPaymentMethod(e.target.value)}
-            ></input>
-            <label htmlFor="cod">CashOnDelivery</label>
-          </div>
-        </div>
 
         <div>
           <label />
