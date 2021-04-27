@@ -27,6 +27,20 @@ export default function PaymentMethodScreen(props) {
           <div>
             <input
               type="radio"
+              id="nogod"
+              value="Nogod"
+              name="paymentMethod"
+              required
+              onChange={(e) => setPaymentMethod(e.target.value)}
+            ></input>
+            <label htmlFor="nogod">Nogod (Personal)</label>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <input
+              type="radio"
               id="bkash"
               value="Bkash"
               name="paymentMethod"
@@ -34,22 +48,24 @@ export default function PaymentMethodScreen(props) {
               checked
               onChange={(e) => setPaymentMethod(e.target.value)}
             ></input>
-            <label htmlFor="bkash">Bkash</label>
+            <label htmlFor="bkash">Bkash (Personal)</label>
           </div>
         </div>
+
         <div>
           <div>
             <input
               type="radio"
-              id="nogod"
-              value="Nogod"
+              id="cod"
+              value="CashOnDelivery"
               name="paymentMethod"
               required
               onChange={(e) => setPaymentMethod(e.target.value)}
             ></input>
-            <label htmlFor="nogod">Nogod</label>
+            <label htmlFor="cod">CashOnDelivery</label>
           </div>
         </div>
+
         <div>
           <label />
           <button className="primary" type="submit">
