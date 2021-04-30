@@ -62,7 +62,7 @@ export default function OrderScreen(props) {
         }
       }
     }
-  }, [dispatch, order, orderId, sdkReady, successPay, successDeliver]);
+  }, [dispatch, orderId, sdkReady, successPay, successDeliver, order]);
 
   const successPaymentHandler = (paymentResult) => {
     dispatch(payOrder(order, paymentResult));
@@ -86,6 +86,7 @@ export default function OrderScreen(props) {
                 <h2>Shipping</h2>
                 <p>
                   <strong>Name:</strong> {order.shippingAddress.fullName} <br />
+                  <strong>Mobile Number:</strong> {order.shippingAddress.phoneNo} <br/>
                   <strong>Address: </strong> {order.shippingAddress.address},
                   {order.shippingAddress.city},{' '}
                   {order.shippingAddress.postalCode},
@@ -135,7 +136,7 @@ export default function OrderScreen(props) {
                           </Link>
                         </div>
                         <div>
-                          {item.qty} x ${item.price} = ${item.qty * item.price}
+                          {item.qty} x ৳{item.price} = ৳{item.qty * item.price}
                         </div>
                       </div>
                     </li>
@@ -154,19 +155,19 @@ export default function OrderScreen(props) {
               <li>
                 <div className="row">
                   <div>Items</div>
-                  <div>${order.itemsPrice.toFixed(2)}</div>
+                  <div>৳{order.itemsPrice.toFixed(2)}</div>
                 </div>
               </li>
               <li>
                 <div className="row">
                   <div>Shipping</div>
-                  <div>${order.shippingPrice.toFixed(2)}</div>
+                  <div>৳{order.shippingPrice.toFixed(2)}</div>
                 </div>
               </li>
               <li>
                 <div className="row">
                   <div>Tax</div>
-                  <div>${order.taxPrice.toFixed(2)}</div>
+                  <div>৳{order.taxPrice.toFixed(2)}</div>
                 </div>
               </li>
               <li>
@@ -175,7 +176,7 @@ export default function OrderScreen(props) {
                     <strong> Order Total</strong>
                   </div>
                   <div>
-                    <strong>${order.totalPrice.toFixed(2)}</strong>
+                    <strong>৳{order.totalPrice.toFixed(2)}</strong>
                   </div>
                 </div>
               </li>
