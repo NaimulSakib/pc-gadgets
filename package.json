@@ -16,6 +16,7 @@
   "bugs": {
     "url": "https://github.com/NaimulSakib/pc-gadgets/issues"
   },
+  
   "homepage": "https://github.com/NaimulSakib/pc-gadgets#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
