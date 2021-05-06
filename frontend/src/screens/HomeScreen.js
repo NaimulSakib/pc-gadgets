@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import image from '../cover.gif'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import Product from '../components/Product';
@@ -26,7 +27,7 @@ export default function HomeScreen() {
   }, [dispatch]);
   return (
     <div>
-      <h2>Top Sellers</h2>
+      <h1 style={{ padding: "10px 10px", backgroundColor: "ghostwhite" , textAlign: "center", color: "#34568b"}}>Buy Your Favourite Desktop Parts Online</h1>
       {loadingSellers ? (
         <LoadingBox></LoadingBox>
       ) : errorSellers ? (
@@ -46,7 +47,7 @@ export default function HomeScreen() {
           </Carousel>
         </>
       )}
-      <h2>Featured Products</h2>
+      <img src={image} height={450} width={1660} />
       {loading ? (
         <LoadingBox></LoadingBox>
       ) : error ? (
