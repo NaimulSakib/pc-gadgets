@@ -25,7 +25,6 @@ export default function Product(props) {
             </Link>
           </div>
         </div>
-        <div className="price">৳{product.price}</div>
       </div>
     </div>
   );
